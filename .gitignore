@@ -1,0 +1,74 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+!web/app/plugins/wp-volta-import
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+
+# WordPress
+web/wp
+web/.htaccess
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Vendor (e.g. Composer)
+vendor/*
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant
+
+# custom
+
+# exclude system cache
+*.DS_Store
+*.sass-cache
+.idea
+=======
+
+# exclude Markup packages
+/web/MARKUP/node_modules
+/web/MARKUP/.sass-cache/
+web/markup/.sass-cache/
+
+# ignore language files
+/web/app/languages/themes/*
+/web/app/languages/plugins/*
+/web/app/languages/*.mo
+/web/app/languages/*.po
+
+/web/app/themes/*.mo
+/web/app/themes/*.po
+
+# custom files
+/web/robots.txt
+#ignore cache files
+/web/app/aiowps_backups/*
+/web/app/blogs.dir/*
+/web/app/upgrade/*
+/web/app/backup-db/*
+/web/app/advanced-cache.php
+/web/app/wp-cache-config.php
+/web/app/cache/*
+/web/app/cache/supercache/*
+*.log
+/web/app/backups/*
+
+.httpasswd
+
+# in the end of the file
+!.gitkeep
+
+
